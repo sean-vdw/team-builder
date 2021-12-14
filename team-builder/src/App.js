@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TeamForm from './TeamForm';
+import TeamMember from './TeamMember';
 
 const initialFormValues = {
   name: '',
