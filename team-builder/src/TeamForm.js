@@ -16,7 +16,7 @@ export default function TeamForm(props) {
   return (
     <form className='form-container' onSubmit={onSubmit}>
       <div className='form-group'>
-        <label>Name
+        <label>Name 
           <input 
             name='name'
             type='text'
@@ -26,7 +26,7 @@ export default function TeamForm(props) {
             onChange={onChange}
           />
         </label>
-        <label>Email
+        <label>Email 
           <input 
             name='email'
             type='email'
@@ -35,7 +35,7 @@ export default function TeamForm(props) {
             onChange={onChange}
           />
         </label>
-        <label>Role
+        <label>Role 
           <select value={values.role} name='role' onChange={onChange}>
             <option value=''> - Select Role - </option>
             <option value='Backend Engineer'>Backend Engineer</option>

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import TeamForm from './TeamForm';
 import TeamMember from './TeamMember';
@@ -39,11 +38,11 @@ function App() {
         update={updateForm}
         submit={submitForm}
       />
-
+      <h2>The Team:</h2>
       {
         teamMembers.map(teamMember => {
           return (
-            <TeamMember key={teamMember.id} details={teamMember}/>
+            <TeamMember key={teamMember} details={teamMember}/>
           )
         })
       }
