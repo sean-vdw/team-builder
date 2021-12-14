@@ -28,11 +28,42 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.team-container {
+  border: 1px lightblue solid;
+  border-radius: 8px;
+  background-color: lightgoldenrodyellow;
+  padding: 3% 2%;
+  margin: 2% 4%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  margin: 1% 0;
+}
+
+.submit button {
+  background-color: steelblue;
+  color: #ffffff;
+  margin-top: 2%;
+  width: 15%;
+  height: 7%;
+}
+
+.member-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.member-container {
+  background-color: whitesmoke;
+  color: #282c34;
+  padding: 3% 5%;
+  margin: 2% 0;
+  width: 50%;
 }

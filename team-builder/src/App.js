@@ -39,13 +39,17 @@ function App() {
         submit={submitForm}
       />
       <h2>The Team:</h2>
+      <div className='team-container'>
       {
         teamMembers.map(teamMember => {
           return (
-            <TeamMember key={teamMember} details={teamMember}/>
+            <div className='member-group'>
+              <TeamMember key={teamMember.id} details={teamMember}/>
+            </div>
           )
         })
       }
+      </div>
     </div>
   );
 }
