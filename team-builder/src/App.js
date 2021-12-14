@@ -27,9 +27,9 @@ function App() {
       email: formValues.email.trim(),
       role: formValues.role
     }
+    setTeamMembers(teamMembers.concat(newTeamMember));
+    setFormValues(initialFormValues);
   }
-
-  // AXIOS????
 
   return (
     <div className="App">
